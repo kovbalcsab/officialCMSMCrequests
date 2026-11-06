@@ -35,12 +35,10 @@ generator = cms.EDFilter(
             'MultipartonInteractions:pT0Ref = 3.0',
             'PDF:beamB2gamma = on', # have the photon coming from beam B
             'PDF:proton2gammaSet = 0',
-            'PDF:pSetA = LHAPDF6:EPPS21nlo_CT18Anlo_Pb208', # add nuclear modifications to beam A
+            'PDF:pSet = LHAPDF6:EPPS21nlo_CT18Anlo_Pb208', # add nuclear modifications to beam A
             'PDF:gammaFluxApprox2bMin = 13.272',
             'PDF:beam2gammaApprox = 2',
             'Photon:sampleQ2 = off',
-            # Set this to 0 for inclusive photons:
-#            'Photon:ProcessType = 0',
         ),
         parameterSets = cms.vstring(
             'pythia8CommonSettings',

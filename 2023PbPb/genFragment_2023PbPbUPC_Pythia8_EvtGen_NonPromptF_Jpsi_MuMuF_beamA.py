@@ -39,8 +39,6 @@ generator = cms.EDFilter(
             'PDF:gammaFluxApprox2bMin = 13.272',
             'PDF:beam2gammaApprox = 2',
             'Photon:sampleQ2 = off',
-            # Set this to 0 for inclusive photons:
-#            'Photon:ProcessType = 0',
         ),
         parameterSets = cms.vstring(
             'pythia8CommonSettings',
